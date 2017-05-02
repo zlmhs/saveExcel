@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .receive table{
+      width: 600px;
+    }
+    .receive table th,.receive table td{
+      width: 140px;
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+    }
+    button{
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background: pink;
+      color: #fff;
+      border-radius: 6px;
+      outline: none;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <button>保存至本地</button>
+  <div class="receive">
+    <table id="table">
+      <tr>
+        <th>单位</th>
+        <th>支部</th>
+        <th>姓名</th>
+        <th>手机号</th>
+      </tr>
+      <tr>
+        <td>小虎豹</td>
+        <td>支部名称1</td>
+        <td>姓名1</td>
+        <td>18463580322</td>
+      </tr>
+      <tr>
+        <td>单位名称2</td>
+        <td>支部名称2</td>
+        <td>姓名2</td>
+        <td>18463587551</td>
+      </tr>
+      <tr>
+        <td>单位名称3</td>
+        <td>支部名称3</td>
+        <td>姓名3</td>
+        <td>18712830270</td>
+      </tr>
+      <tr>
+        <td>单位名称4</td>
+        <td>支部名称4</td>
+        <td>姓名4</td>
+        <td>18712830270</td>
+      </tr>
+      <tr>
+        <td>单位名称5</td>
+        <td>支部名称5</td>
+        <td>姓名5</td>
+        <td>18712830270</td>
+      </tr>
+      <tr>
+        <td>单位名称3</td>
+        <td>支部名称3</td>
+        <td>姓名3</td>
+        <td>18712830270</td>
+      </tr>
+      <tr>
+        <td>单位名称4</td>
+        <td>支部名称4</td>
+        <td>姓名4</td>
+        <td>18712830270</td>
+      </tr>
+      <tr>
+        <td>单位名称5</td>
+        <td>支部名称5</td>
+        <td>姓名5</td>
+        <td>18712830270</td>
+      </tr>
+    </table>
+  </div>
+  <script src="excel.js"></script>
+  <script>
+    var btn=document.getElementsByTagName('button')[0];
+    btn.onclick=function(){
+      exportExcel('table','党员领取详情');
+    }
+  </script>
+</body>
+</html>
